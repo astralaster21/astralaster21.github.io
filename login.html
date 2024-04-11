@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CG | Login</title>
+
+        <style>
+            * {
+                background-color: #E8E5E5;
+            }
+ 
+            #box_1 {
+                position: relative;
+                width: 45vw;
+                height: 100vh;
+                text-align: center;
+            }
+
+            #login {
+                margin-top: 8vh;
+                font-size: 3rem;
+            }
+
+            #login input {
+                background-color: white;
+                border: 0px transparent;
+                border-radius: 20px;
+                font-size: 2rem;
+                width: 30vw;
+                height: 10vh;
+                margin-top: 1vw;
+                margin-bottom: 3vw;
+            }
+
+            #login input[type=submit] {
+                background-color: #231F1F;
+                color: white;
+                width: 10vw;
+                height: 8vh;
+                font-size: 2rem;
+            }
+
+            #login input[type=submit]:hover {
+                background-color: #5E81AC;
+                transition: all 0.3s ease;
+            }
+
+            #box_2 {
+                position: absolute;
+                width: 55vw;
+                height: 100vh;
+                top: 0px;
+                left: 40vw;
+            }
+
+            .large_logo {
+                width: 8vw;
+                margin: 8vw;
+                margin-top: 15vw;
+            }
+
+            #box_2 h1 {
+                position: relative;
+                width: 25vw;
+                top: -22.5vw;
+                left: 16vw;
+                font-size: 6rem;
+            }
+
+            #box_2 p, #box_2 a {
+                font-size: 2rem;
+                text-align: center;
+                margin-top: -25vw;
+            }
+
+            a {
+                color: black;
+                font-style: italic;
+            }
+
+            a:hover {
+                color: #4263EB;
+                transition: all 0.1s ease;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="box_1">
+            <form id="login" action="CODAK GALLERY WEBSITE.html">
+                <h2>LOGIN</h2>
+                <label for="username">Username</label>
+                <br>
+                <input id="username" name="username" type="text" placeholder="Enter Username" required>
+                <br>
+                <label for="pass_word">Password</label>
+                <br>
+                <input id="pass_word" name="pass_word" type="password" placeholder="Enter Password" required>
+                <br>
+                <input type="submit" value="LOGIN">
+            </form>
+        </div>
+
+        <div id="box_2">
+            <img class="large_logo" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434261361_439909815373478_1643222907937126022_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yCe3Wek8DGMAb4TKCy3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdWZEHhTyLfy4nY_crJwfqoG5u0-hAtTnOc-ngneIBQWdA&oe=66360965" id="codaklogo" alt="codak">
+            <h1 id="codakheader" alt="logo">
+            <h1>CODAK GALLERY</h1>
+
+            <p>Don't have an account yet? <a href="signup.html">Sign up here</a></p>
+        </div>
+    </body>
+</html>

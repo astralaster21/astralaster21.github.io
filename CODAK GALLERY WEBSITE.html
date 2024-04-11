@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/434261361_439909815373478_1643222907937126022_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yCe3Wek8DGMAb4TKCy3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdWZEHhTyLfy4nY_crJwfqoG5u0-hAtTnOc-ngneIBQWdA&oe=66360965">
+  <title>
+    CODAK GALLERY WEBSITE
+  </title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+   header {
+            position:fixed;
+            top:0;
+            left:0;
+            height: 10% ;
+            width: 100%;
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+            background: #E8E5E5;
+            margin-bottom: 5%;
+            padding: 0%;
+            
+            
+        }
+
+        header #codaklogo {
+          position: fixed;
+          left: 32%;
+            height:8%;
+            width: 6%;
+         
+
+        }
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+        }
+
+        header ul li {
+            list-style: none;
+            
+        }
+        
+        header ul li a {
+            text-decoration: none;
+            padding:10px;
+            color: #140d07;
+            font-size: 160%;  
+            border-radius: 2px;
+        }
+
+        header ul li a:visited {
+            color: #140d07;
+        }
+
+        header ul li a:hover {
+            background: white;
+            color: #140d07;
+        }
+         header #codakheader{
+          position:fixed;
+          right:32%;
+          font-size: 300%;
+          width: 30%;
+        }
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  color: black;
+  padding: 9px 16px;
+  background-color: transparent;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: white;
+  min-width: 145px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 2px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ .dropdown:hover .dropbtn {
+  background-color: white;
+}
+.search-input {
+    width: 14.2%;
+    padding: 2px 2px 2px 2px;
+    border: 1px solid #ccc;
+    border-radius: 2px; /* Adjust border-radius as needed */
+    outline: 1px solid black;
+    position:absolute;
+    right:7%;
+}
+button.search {
+    float: none;
+    display:block;
+    width: 2%;
+    margin: 0;
+    right: 21.7%;
+    padding: 3.5px;
+    position:fixed;
+    background-color: white;
+    border: solid 1px black;
+
+  }
+  .clear-btn {
+    display:initial;
+    position: fixed;
+    right:7.3%;
+    bottom:93.6%;
+    cursor: pointer;
+} 
+#frontpage{
+    position: absolute;
+    font-size: 350%;
+    color: black;
+    text-align: center;
+    top: 23%;
+    left: 10%;
+}
+#frontpic{
+    width: 40%;
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    top: 15%;
+}
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#scrollBtn:hover {
+  background-color: #555;
+}
+body.background{
+    background-color: white;
+    padding: 30px 30px 2650px;
+}
+.onepic{
+    width: 22.5%;
+    position: absolute;
+    border-radius: 30px;
+    left: 7.3%;
+    bottom: -40%;
+}
+.twopic{
+    width: 22.5%;
+    position: absolute;
+    border-radius: 30px;
+    left: 38.6%;
+    bottom: -40%;
+}
+.threepic{
+    width: 22.5%;
+    position: absolute;
+    border-radius: 30px;
+    left: 70%;
+    bottom: -40%;
+}
+.fourpic{
+    width: 22.5%;
+    position: absolute;
+    border-radius: 30px;
+    left: 7.3%;
+    bottom: -84%;
+}
+.fivepic{
+    width: 22.5%;
+    position: absolute;
+    border-radius: 30px;
+    left: 38.6%;
+    bottom: -84%;
+}
+.sixpic{
+    width: 22.5%;
+    position: absolute;
+    border-radius: 30px;
+    left: 70%;
+    bottom: -84%;
+}
+.sevenpic{
+    width: 23%;
+    position: absolute;
+    border-radius: 30px;
+    left: 7.3%;
+    bottom: -127%;
+}
+.eightpic{
+    width: 22.5%;
+    position: absolute;
+    border-radius: 30px;
+    left: 38.6%;
+    bottom: -130%;
+}
+.ninepic{
+    width: 22.5%;
+    position: absolute;
+    border-radius: 30px;
+    left: 70%;
+    bottom: -129%;
+}
+.tenpic{
+    width: 22.5%;
+    position: absolute;
+    border-radius: 30px;
+    left: 7.3%;
+    bottom: -176.5%;
+}
+.elevenpic{
+    width: 22.5%;
+    position: absolute;
+    border-radius: 30px;
+    left: 38.6%;
+    bottom: -176.5%;
+}
+.twelvepic{
+    width: 22.5%;
+    position: absolute;
+    border-radius: 30px;
+    left: 70%;
+    bottom: -176.5%;
+}
+.thirteenpic{
+    width: 22.5%;
+    position: absolute;
+    border-radius: 30px;
+    left: 50%;
+    bottom: -233%;
+}
+#fourteenpic{
+    width: 22.5%;
+    position: absolute;
+    border-radius: 30px;
+    left: 72%;
+    bottom: -272%;
+}
+ #profile{
+  position: fixed;
+  right:20px;
+
+ }
+ .about-page1{
+    position: absolute;
+    font-size: 55px;
+    color: black;
+    text-align: center;
+    top:300%;
+    left: 17.5%;
+}
+ .contact{
+  position: absolute;
+    font-size: 36px;
+    color: black;
+    text-align: center;
+    top:310%;
+    left: 17.5%;
+    font-style: initial;
+    font-family: sans-serif; 
+ }
+ .Ig{
+  position: absolute;
+    font-size: 36px;
+    color: black;
+    text-align: center;
+    top:328%;
+    left: 17.5%;
+    font-style: italic;
+    font-style: bold;
+    font-family: fantasy, sans-serif;
+ }
+ .slash{
+   position: absolute;
+    font-size: 36px;
+    color: black;
+    text-align: center;
+    top:323%;
+    left: 405px;
+    font-style: italic;
+    font-family: fantasy;
+ }
+ .fb{
+  position: absolute;
+    font-size: 36px;
+    color: black;
+    text-align: center;
+    top:328%;
+    left: 30%;
+    font-style: italic;
+    font-style: bold;
+    font-family: fantasy, sans-serif;
+ }
+ .email{
+  position: absolute;
+    font-size: 36px;
+    color: black;
+    text-align: center;
+    top:330%;
+    left: 17%;
+    font-style: italic;
+    font-family: fantasy,sans-serif;
+ }
+
+</style>
+<body class="background">
+    <h1 id="frontpage">"Capturing Moments,<br>
+        Inspiring Creativity:<br>
+Codak Gallery, where<br>
+every frame tells a<br>
+story"</h1>
+<h1 class="about-page1">TALK TO US</h1>
+<p class="contact">(04) 298 3985 2092<br>
++76 209 1092 4095</p>
+<a href="https://www.instagram.com/" class="Ig">Instagram</a>
+<p class="slash">/</p>
+<a href="https://www.facebook.com/" class="fb">Facebook</a>
+<p class="email">info@codakgallery.com</p>
+
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434402158_1556337435142528_612197949381686955_n.png?stp=dst-png_p206x206&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGpGKwW6VcPrY7zXT5Bnu0lxGfBzecIdlHEZ8HN5wh2UaSMEHLghFlPrehFhT63hn8fC9H56-LD2skrIjUu7r2F&_nc_ohc=Jf4JnhoyHd8Ab7HVDuU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdWlco67Xr3Pg3wg2rPnprWs8Fjdl1iaOh69ZsbSCrCr6w&oe=6638EECD" id="frontpic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/432397984_408792698772871_5591659600440914677_n.png?stp=dst-png_p235x165&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGvipiEugoYNJNJ4uc-lfekZlyMMozr6RFmXIwyjOvpERSQjWZsuCZbHHZNkdpvPDDUQ7JJ-87XNxIkjKhbPQ5o&_nc_ohc=_sXMOJ2pbRQAb5KGDaz&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdX6Xfa-NxEPdu8EvlsQAxMKZIbsdzBoVLaNLXTo479QZA&oe=6638F21A" class="onepic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434769188_805597894794287_7019834063814602749_n.png?stp=dst-png_p235x165&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGfUnw2TcaEy6hW0-Kt4SG2XAIULzLCVg5cAhQvMsJWDrZRDZRqRiyG6LarP6oN66A-g8QP_YGhSjRfsEmf0pRp&_nc_ohc=A-vk_ql1EuwAb5n1kff&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdVOpY-xUmpYnX35wpAqkAcraJq9WMT-nGhKt6-c1JiV-g&oe=66390263" class="twopic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434391540_1198868737759409_2276369862008050647_n.png?stp=dst-png_s261x260&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHO3ZR1QZsYeAZtKBpkczjPq3buD3-0ow2rdu4Pf7SjDbxwUn4SFSNBPGospyKTs5llKFGy6hkojmU0wvDV5zU_&_nc_ohc=pWbScidTMNgAb7-brVO&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdX_HEdgkiR7UIsAzHm0li0X8EecYSbB6hos3SXgw2ff0A&oe=6638E464" class="threepic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434264729_1485311112052124_5329781758987672695_n.png?stp=dst-png_p206x206&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHnBNWJn9wbconOMbC2WYUtB2amhnIEMMMHZqaGcgQww5rtD0qkLsOdGZbNmxomOtci2srLlHw2v6ylkEw8rXfM&_nc_ohc=M3wWVdwc_jQAb5A675j&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdUZqbD8P5u1mu0mavtGL4SzF_9gI8D8pdTU3iA3ggwnpA&oe=6638F90D" class="fourpic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434751862_1523380745271954_9106557625278168615_n.png?stp=dst-png_s240x240&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFiRVhhdSYDgDbFdpnc5NTMOcg9L-ifvz85yD0v6J-_P_zrlIe3JouefRi_cDgrNO7boX-aJl_Rax9XvrIes-6l&_nc_ohc=nG8v5E6Big8Ab5ZNa3_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdVsWdT6oIwhhfhpChMy4Hg48LygUr0U-rcLERep-4BioQ&oe=6638F43F" class="fivepic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434862800_2191028714567255_5512844266849038903_n.png?stp=dst-png_s240x240&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF7I_oN1BgpBsfHdmFH51cQ3mi9lWj654DeaL2VaPrngEkB0MOxgfn0E0B_rS6wLSGNEQM-5if3FsUCefvY72g3&_nc_ohc=C1E2F3wJ9cMAb4r7ou-&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdVIQki4iDqmXZfPrzrgZRy-4WKrQlaRyjApSHL0gsES_Q&oe=6638E3D1" class="sixpic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/432385222_1941473612971344_2497365991241526193_n.png?stp=dst-png_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGabFSW_iG6dlrRl9Ru4wgZDbO-nfYtJhMNs76d9i0mE8BOEnLLXlAkJolJqIdXtU7pGnCzxrM5j_XmeywWfQ0K&_nc_ohc=m_Ys4qOHEGwAb7nNDVC&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdXcqaz859I0U7q4ZjIVXhoijKv3nRUXqIl8KO1hl8ad7Q&oe=6638EB08" class="sevenpic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434354116_749117030333168_6829622812576891217_n.png?stp=dst-png_p228x119&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHnzI5ENPCG0tyyUTlV1cE92aV-28rlvXrZpX7byuW9esT9LM4S-bNJYToG0GN9IggZqHMFa99rC8mLo9GY6sdD&_nc_ohc=9A6YitQttzsAb7-PoK6&_nc_oc=AdhBXJA1D3q7-TADxQc1YImgkLdym48HLT9RltNfARMB6kiG-T04AK1DHFs7YvkscYloqA9ViOpQd4w1soqaesdH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdXKQtmgidvGeP_ESYs1NI8hYAavvPZEodonSI3Bm3lHNA&oe=66390F6E" class="eightpic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434336554_809570601092531_3657953320900273113_n.png?stp=dst-png_p235x165&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH2wPEJ3qXzdV6BaG8L66e9u161iAeoiAW7XrWIB6iIBZ5ZF7V9oxP-g-gin0XFOln_ZFiLI9yFfB_-klBcz1rG&_nc_ohc=Qg1DYCYvax4Ab7FxV3v&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdUrVwb-cFWy9D2EVzO1VPLZIt7V3PzPuayMBHmzgh4SqQ&oe=6638EE55" class="ninepic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434261364_972338087592390_7969714792019500476_n.png?stp=dst-png_p235x165&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGooGlDfJb_ZPH9d4hDwY73JcJ1EI2VizMlwnUQjZWLMxtB8HTAr3Jcp1TBiAjMfdtpvpDEE3uuO6LtiynGEu0K&_nc_ohc=kaHezi0AwK0Ab4IaAh6&_nc_oc=Adgvz8xLUUJ758-K2gy1FtYZSfvKQUuzncxxEjUruOhN8OgEj0wVwJ3ne-mktiy6y_fg65dfExHsBPZAmscxLGtK&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdUSBz-T5s2UBDaGjXedFJA6_2XC-hbjKp8E5KTR7hAP9g&oe=66391AB5" class="tenpic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434314560_799286191543535_6649067138030104341_n.png?stp=dst-png_s240x240&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEvFdfz8v-tTzzuq3_qxq5cS79JHpdRLo5Lv0kel1EujkdoQzR2Od52MGFdcoHNTPajE6KDdQ0v2gz6e8GVk3CA&_nc_ohc=L518U9bXB1EAb44KFmI&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdXXt-UIny8wBs_n-Y3LUPjO8ccdQk4vS5fbaHXrfnFqMA&oe=6638E8A6" class="elevenpic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434267835_1106698930393212_6828717285158029033_n.png?stp=dst-png_p235x165&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEU9iWW3UBPQg_1SVL5A_Wsz0uk35i-p13PS6TfmL6nXTmK9tkAWJctyLFAE-oaVY6ZQYD6-Sxbv_QBDqwEMu8F&_nc_ohc=ttdS9cnvx84Ab6X3ITT&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdUXUAnsKrXJOk-RVrKqu8aNadj9rScsqDoV9LjXg6Va8w&oe=6638E8EA" class="twelvepic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434316459_798609122140426_3918562113505534750_n.png?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF5q7o-gXrN5pEunC_9Nys87CZ73kV7tpvsJnveRXu2mxkubjaDtIxEqIJFs-J0AEb3oEk9mG1bAFWJPqCu9ak3&_nc_ohc=BSLgvLlxAi8Ab5lIb9e&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdVLTE_gstDepctwTHxME4Jeo-W4Mp1ib_jU5etwuIZdMg&oe=663A3422" class="thirteenpic">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434777789_1064488807955682_6001701237279137352_n.png?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGl2RaZNqrZnA0tvfmdVeTZg3qVs2jUbZSDepWzaNRtlKrKT5ypV0NgEBYV0fgbPa73gMruuYPBccMgn4JAWVM_&_nc_ohc=qQkyGmG9yZQAb4pLov_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdXOHMK98OdzLSmge39rAHUbGvdAcRNzARF0VqjVvUBTUA&oe=663A180C" id="fourteenpic">
+     <header>
+             <ul> 
+                <li><a onclick="topFunction()" id="Overview" title="Go to top">Overview</a></li>
+
+  <div class="dropdown">
+    <button class="dropbtn">Category
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <button class="dropbtn"><b>Country</b></button><br>
+    <a><input type="radio" id="America" name="country" value="America">America</a>
+    <a><input type="radio" id="Philippines" name="country" value="Philippines">Philippines</a>
+    <a><input type="radio" id="Japan" name="country" value="Japan">Japan</a>
+    <a><input type="radio" id="Russia" name="country" value="Russia">Russia</a>
+   <a><input type="radio" id="Germany" name="country" value="Germany">Germany</a>
+      <button class="dropbtn"><b>Type</b></button>
+      <a><input type="radio" id="Portrait" name="type" value="Portrait">Portrait</a>
+      <a><input type="radio" id="Landscape" name="type" value="Landscape">Landscape</a>
+      <a><input type="radio"  id="Nature" name="type" value="Nature">Nature</a>
+    </div>
+  </div>
+                <li><a href="#fourteenpic" onclick="scrollToAbout()">About</a></li>
+            </ul>
+
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434261361_439909815373478_1643222907937126022_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yCe3Wek8DGMAb4TKCy3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdWZEHhTyLfy4nY_crJwfqoG5u0-hAtTnOc-ngneIBQWdA&oe=66360965" id="codaklogo" alt="codak">
+            <h1 id="codakheader">CODAK GALLERY</h1>
+
+            <button type="submit"class="search"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search.." name="search" class="search-input">
+            <span class="clear-btn" onclick="clearSearch()">&#10006;</span>
+
+            <div class="dropdown" id="profile">
+    <button class="dropbtn">
+      <i class="fa fa-user-circle-o"></i></button>
+      <div class="dropdown-content">
+      <a href="profile.html">My Profile</a>
+      <a href="login.html">Sign Out</a>
+</header>
+
+
+<script>
+     function clearSearch() {
+    var input = document.querySelector('.search-input');
+    input.value = '';
+  }
+let mybutton = document.getElementById("Overview");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "block";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+</body>
+</html>

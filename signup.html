@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CG | Sign Up</title>
+        <link rel="icon" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/434261361_439909815373478_1643222907937126022_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yCe3Wek8DGMAb4TKCy3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdWZEHhTyLfy4nY_crJwfqoG5u0-hAtTnOc-ngneIBQWdA&oe=66360965">
+     
+
+   <style>
+            * {
+                background-color: #E8E5E5;
+            }
+
+            .small_logo {
+                position: relative;
+                width: 5vw;
+                top: -8.5vw;
+                left: 24vw;
+            }
+
+            #top h1 {
+                position: relative;
+                font-size: 4rem;
+                text-align: center;
+            }
+
+            #account h1 {
+                position: relative;
+                font-size: 3rem;
+                text-align: center;
+                top: -10vw;
+            }
+
+            #signup table {
+                position: relative;
+                width: 80vw;
+                padding: 1vh;
+                margin-top: -20vh;
+                margin-left: 20vh;
+            }
+
+            #signup label {
+                font-size: 2rem;
+                margin: 1vw;
+            }
+            
+            #signup input {
+                font-size: 1.5rem;
+                margin: 1vw;
+            }
+
+            #signup input {
+                background-color: white;
+                border: 0 transparent;
+                border-radius: 20px;
+                width: 20vw;
+                height: 7vh;
+
+            }
+
+            #signup #male, #signup #female {
+                width: 9vw;
+            }
+
+            #signup #submit {
+                position: relative;
+                background-color: #231F1F;
+                color: white;
+                width: 10vw;
+                height: 8vh;
+                left: 43vw;
+                margin: 0vw;
+            }
+
+            #signup #submit:hover {
+                background-color: #5E81AC;
+                transition: all 0.3s ease;
+            }
+
+            #account p, #account a {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            a {
+                color: black;
+                font-style: italic;
+            }
+
+            a:hover {
+                color: #4263EB;
+                transition: all 0.3s ease;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="top">
+            <h1>CODAK GALLERY</h1>
+            <img class="small_logo" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434261361_439909815373478_1643222907937126022_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yCe3Wek8DGMAb4TKCy3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdWZEHhTyLfy4nY_crJwfqoG5u0-hAtTnOc-ngneIBQWdA&oe=66360965" alt="logo">
+        </div>
+
+        <div id="account">
+            <form id="signup" action="CODAK GALLERY WEBSITE.html">
+                <h1>CREATE AN ACCOUNT</h1>
+                <table>
+                    <tr>
+                        <td><label>Fullname</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" name="full_name" id="first_name" class="full_name" placeholder="First name" required>
+                        </td>
+                        <td>
+                            <input type="text" name="full_name" id="mid_name" class="full_name" placeholder="Middle name" required>
+                        </td>
+                        <td>
+                            <input type="text" name="full_name" id="last_name" class="full_name" placeholder="Last name" required></label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">Email Address</label>
+                        </td>
+                        <td>
+                            <label for="contact">Contact Number</label>
+                        </td>
+                        <td>
+                            <label for="birthdate">Birthdate</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </td>
+                        <td>
+                            <input type="tel" name="contact" id="contact" placeholder="Contact Number" required>
+                        </td>
+                        <td>
+                            <input type="date" name="birthdate" id="birthdate" placeholder="mm-dd-yyyy" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Gender</label>
+                        </td>
+                        <td>
+                            <label for="country">Country</label>
+                        </td>
+                        <td>
+                            <label for="user_name">Username</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="button" name="gender" id="male" value="Male">
+                            <input type="button" name="gender" id="female" value="Female">
+                        </td>
+                        <td>
+                            <input type="text" name="country" id="country" placeholder="Country" required>
+                        </td>
+                        <td>
+                            <input type="text" name="user_name" id="user_name" placeholder="Username" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="password_1">Password</label>
+                        </td>
+                        <td>
+                            <label for="password_2">Confirm Password</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="password" name="password" id="password_1" placeholder="Password" required>
+                        </td>
+                        <td>
+                            <input type="password" name="password" id="password_2" placeholder="Confirm Password" required>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" name="submit" id="submit" value="SUBMIT">
+            </form>
+
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorey Rivero Work</title>
+    <link rel="icon" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/434261361_439909815373478_1643222907937126022_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yCe3Wek8DGMAb4TKCy3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdWZEHhTyLfy4nY_crJwfqoG5u0-hAtTnOc-ngneIBQWdA&oe=66360965">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {         
+            margin: 0;
+            padding: 0;
+            display: flex;
+            color: #140d07;
+        }
+
+        .name{
+            font-family: sans-serif,;
+            font-style: initial;
+            font-size: 230%;
+            justify-content: center;
+            display: flex;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #profile-image {
+            border-radius: 50%;
+            max-width: 90%;
+            height: auto; 
+        }
+
+        .column {
+            flex: 1;
+            padding: 80px;
+            text-align: center;
+        }
+
+        .back-button {
+        bottom: 610px; 
+        right: 1300px;
+        position: absolute;
+}
+
+        .bio-link {
+            text-decoration: underline;
+            color: black;
+        }
+
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+            font-size: 150%;
+
+        }
+
+        .about {          
+            list-style-type: none;
+            padding-top: 40%;
+            text-align: left;
+            font-family:sans-serif;
+        }
+
+        .about h2 {
+          font-style: initial;
+            font-size: 40px;
+            font-family: sans-serif;
+        }
+
+        .about p {
+            margin-top: 20px; 
+            line-height: 1.5; 
+            font-family: arial;
+        }
+
+        .contact {
+            list-style-type: none;
+            padding-top: 40%;
+            text-align: left;
+            font-size: 40px;
+            font-family: sans-serif;
+        }
+         header {
+            position:fixed;
+            top:0;
+            left:0;
+            height: 10% ;
+            width: 100%;
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+            background: #E8E5E5;
+            margin-bottom: 5%;
+            padding: 0%;
+            
+            
+        }
+
+        header #codaklogo {
+            position: fixed;
+            left: 32%;
+            height:8%;
+            width: 6%;
+         
+
+        }
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+        }
+
+        header ul li {
+            list-style: none;
+            
+        }
+        
+        header ul li a {
+            text-decoration: none;
+            padding:10px;
+            color: #140d07;
+            font-size: 160%;    
+            border-radius: 2px;
+        }
+
+        header ul li a:visited {
+            color: #140d07;
+        }
+
+        header ul li a:hover {
+            background: white;
+            color: #140d07;
+        }
+         header #codakheader{
+            position:fixed;
+            right:32%;
+            font-size: 300%;
+            width: 30%;
+        }
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  color: black;
+  padding: 9px 16px;
+  background-color: transparent;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: white;
+  min-width: 145px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 2px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ .dropdown:hover .dropbtn {
+  background-color: white;
+}
+.search-input {
+    width: 14.2%;
+    padding: 2px 2px 2px 2px;
+    border: 1px solid #ccc;
+    border-radius: 2px; /* Adjust border-radius as needed */
+    outline: 1px solid black;
+    position:absolute;
+    right:7%;
+}
+button.search {
+    float: none;
+    display:block;
+    width: 2%;
+    margin: 0;
+    right: 21.7%;
+    padding: 3.5px;
+    position:fixed;
+    background-color: white;
+    border: solid 1px black;
+
+  }
+  .clear-btn {
+    position: fixed;
+    right:7.3%;
+    bottom:93.6%;
+    cursor: pointer;
+} 
+ #profile{
+  position: fixed;
+  right:20px;
+}
+.jorey-works{
+ position:absolute;
+ font-family: serif;
+font-weight: bolder;
+ right:0.5%;
+ font-size: 250%;
+ width: 70%;
+ bottom: 80%;
+}
+#back-button{
+position: absolute;
+  color: #140d07;
+  left: 3%;
+  bottom:80%;
+  font-size: 180%;
+  text-decoration: none;
+  font-style: bold;
+}
+.onepic{
+  position: absolute;
+  width: 18%;
+  bottom: 45%;
+  left: 5%;
+}
+.twopic{
+position: absolute;
+width: 18%;
+bottom: 45%;
+left:28.5%;
+}
+.threepic{
+position: absolute;
+width: 18%;
+bottom: 45%;
+left:52.5%;
+}
+.fourpic{
+position: absolute;
+width: 18%;
+bottom: 45%;
+left:76%;
+}
+.fivepic{
+ position: absolute;
+  width: 18%;
+  bottom: 8%;
+  left: 5%;
+}
+.sixpic{
+position: absolute;
+  width: 18%;
+  bottom: 8%;
+  left: 28.5%;
+}
+.sevenpic{
+position: absolute;
+  width: 18%;
+  bottom: 8%;
+  left: 52.5%;
+}
+.eightpic{
+  position: absolute;
+  width: 18%;
+  bottom: 8%;
+  left: 76%;
+}
+    </style>
+</head>
+<body>
+  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434330260_277690005391566_7075207361842377257_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHrWPJ2oUrXSkP0LUlRqD1I4bqsRtsii_3huqxG2yKL_U7aLbOaNRhQQHJkG3wDNtRmpoMbqAmHW1QYmXY_yTvd&_nc_ohc=PARYMfCJ7akAb58-zmg&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdUWHQrzGCm4Swp8SgpzlItEKWosI2FAIV82qPVnj4-IEw&oe=663E2E2E" class="onepic">
+  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434155040_776378067813075_6225398348970728428_n.png?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGWJOuVdr5AmGuYIc2_iEL4WHzaT9F6ZsVYfNpP0XpmxSir8lQ7FSCfz7PuucKlBmFEXQUN5fBqPdQ82sosMIQs&_nc_ohc=MTVZIgZdbvsAb7U0t8L&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdVwNSXHIXA5x6RrDXr4MZs0PiaP-1TVB-yNC_yY7zkA4Q&oe=663E0AFE" class="twopic">
+  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/432536591_242635475538452_7749480877514374425_n.png?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE19ii4e3umS31SyBUrhCOnDotEyx5hmdsOi0TLHmGZ2-MdPnNk1EK5S2Q64wA9nLTgFnlUWzjJksGflpOigIhW&_nc_ohc=eiZ_SN2xp6UAb60d2tu&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdWrFxDq1zJCPppjrx8YsFfH6K1QbyHoSqgoY9e4PgSF3g&oe=663E15C1" class="threepic">
+  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434376619_974441970769462_138292662858306197_n.png?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHz6zDTzg2n8uM6haUxDfKwAXrnaGgCGnsBeudoaAIae8zEnR2fmVz-xlmhqs9mYCfMvkjR49YzYi6YERH-lyLJ&_nc_ohc=DvgYwsyIBjYAb4Pth6n&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdU0IuOFZWBi0acq-cbhRQplQwqPJSbFkUQXmFzJF1zzRg&oe=663E1C14" class="fourpic">
+  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434336455_1139592777392637_3096589541958920145_n.png?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEOMRxxwa7LShZryw_GWAwMdcp9Ig_nxJF1yn0iD-fEkey1T9DO12G9TtdBLnWBHQ5BuzpevOsvs1GugiegySLM&_nc_ohc=KBE2vtALPSYAb7A7pFA&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdVDXEmU8etuHG39fIzxxZVG1tkYgp-bh8BhKqvoDsRG-g&oe=663E30E1" class="fivepic">
+  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434325981_799500075401535_8023872154141714768_n.png?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGy9nM0Pc-hLxIcNc403gEGGp9AjyH-3rQan0CPIf7etAPiiqTLB57_hIm7Fx2wde6a7maCJnmG0g7_MmRaW_8O&_nc_ohc=1oQXsNzzRUgAb5bStAA&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdU4NYmv9biMsr1kOPU71Y9nbMAElq3SyhaEeJAGvnjAZw&oe=663E38E5" class="sixpic">
+  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434468977_970250261343077_4303477576115372772_n.png?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHsXOFMaSxOSICbhd8Aj71yK5cELZt2I4crlwQtm3Yjh9E7fwCIUySNiYB0lrckF_mzxLxAmWQUl0yAuqCPybdk&_nc_ohc=KdWFvtmOo9QAb4apgdu&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdVp8fHmy3SWhrHGvlvTtZ0O5uUbfTIPDEP2Jko-XdOyBQ&oe=663E29ED" class="sevenpic">
+  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434510309_942547294191636_2554930998355811397_n.png?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHzJ8WxCwf-1dgahzOZLkgm0MwvJxBkMsDQzC8nEGQywCWLSs0JaWKEsngVywg7ik868GoLGGa1tkSAFKEHa8OK&_nc_ohc=7mI5oRizIdUAb4yrED_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdUfab0D_GdLKax1pgK0E2A6AJ4YZDVmtbhY6awDhU7dOA&oe=663E3E63" class="eightpic">
+  <a class="jorey-works">Jorey Mapagmahal Rivero's Works </a>
+  <a href="profile.html" class="fa fa-caret-square-o-left" id="back-button"> Back</a>
+      <header>
+               <ul> 
+                <li><a onclick="topFunction()" id="Overview" title="Go to top">Overview</a></li>
+
+  <div class="dropdown">
+    <button class="dropbtn">Category
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <button class="dropbtn"><b>Country</b></button><br>
+    <a><input type="radio" id="America" name="country" value="America">America</a>
+    <a><input type="radio" id="Philippines" name="country" value="Philippines">Philippines</a>
+    <a><input type="radio" id="Japan" name="country" value="Japan">Japan</a>
+    <a><input type="radio" id="Russia" name="country" value="Russia">Russia</a>
+   <a><input type="radio" id="Germany" name="country" value="Germany">Germany</a>
+      <button class="dropbtn"><b>Type</b></button>
+      <a><input type="radio" id="Portrait" name="type" value="Portrait">Portrait</a>
+      <a><input type="radio" id="Landscape" name="type" value="Landscape">Landscape</a>
+      <a><input type="radio"  id="Nature" name="type" value="Nature">Nature</a>
+    </div>
+  </div>
+                <li><a href="#fourteenpic" onclick="scrollToAbout()">About</a></li>
+            </ul>
+
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434261361_439909815373478_1643222907937126022_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yCe3Wek8DGMAb4TKCy3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdWZEHhTyLfy4nY_crJwfqoG5u0-hAtTnOc-ngneIBQWdA&oe=66360965" id="codaklogo" alt="codak">
+            <h1 id="codakheader">CODAK GALLERY</h1>
+
+            <button type="submit"class="search"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search.." name="search" class="search-input">
+            <span class="clear-btn" onclick="clearSearch()">&#10006;</span>
+
+            <div class="dropdown" id="profile">
+    <button class="dropbtn">
+      <i class="fa fa-user-circle-o"></i></button>
+      <div class="dropdown-content">
+      <a href="profile.html">My Profile</a>
+      <a href="login.html">Sign Out</a>
+</header>
+</body>
+</html>

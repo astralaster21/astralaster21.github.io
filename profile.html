@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="icon" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/434261361_439909815373478_1643222907937126022_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yCe3Wek8DGMAb4TKCy3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdWZEHhTyLfy4nY_crJwfqoG5u0-hAtTnOc-ngneIBQWdA&oe=66360965">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {         
+            background:#E8E5E5;
+        }
+         header {
+            position:fixed;
+            top:0;
+            left:0;
+            height: 10% ;
+            width: 100%;
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+            background: #E8E5E5;
+            margin-bottom: 5%;
+            padding: 0%;
+            
+            
+        }
+
+        header #codaklogo {
+            position: fixed;
+            left: 32%;
+            height:8%;
+            width: 6%;
+         
+
+        }
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+        }
+
+        header ul li {
+            list-style: none;
+            
+        }
+        
+        header ul li a {
+            text-decoration: none;
+            padding:10px;
+            color: #140d07;
+            font-size: 160%;    
+            border-radius: 2px;
+        }
+
+        header ul li a:visited {
+            color: #140d07;
+        }
+
+        header ul li a:hover {
+            background: white;
+            color: #140d07;
+        }
+         header #codakheader{
+            position:fixed;
+            right:32%;
+            font-size: 300%;
+            width: 30%;
+        }
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  color: black;
+  padding: 9px 16px;
+  background-color: transparent;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: white;
+  min-width: 145px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 2px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ .dropdown:hover .dropbtn {
+  background-color: white;
+}
+.search-input {
+    width: 14.2%;
+    padding: 2px 2px 2px 2px;
+    border: 1px solid #ccc;
+    border-radius: 2px; /* Adjust border-radius as needed */
+    outline: 1px solid black;
+    position:absolute;
+    right:7%;
+}
+button.search {
+    float: none;
+    display:block;
+    width: 2%;
+    margin: 0;
+    right: 21.7%;
+    padding: 3.5px;
+    position:fixed;
+    background-color: white;
+    border: solid 1px black;
+
+  }
+  .clear-btn {
+    position: fixed;
+    right:7.3%;
+    bottom:93.6%;
+    cursor: pointer;
+} 
+ #profile{
+  position: fixed;
+  right:20px;
+}
+#profile-image{
+  position:absolute;
+  border-radius: 50%;
+  width: 28%;
+  left:7%;
+  bottom: 25%;
+  display: block;
+}
+ #back-button{
+  position: absolute;
+  color: #140d07;
+  left: 3%;
+  bottom:80%;
+  font-size: 180%;
+  text-decoration: none;
+  font-style: bold;
+ }
+ #Aboutme{
+  position: absolute;
+  color:#140d07;
+  left: 40%;
+  font-style: bold;
+  font-family:fantasy; 
+  font-family: serif;
+  font-size:400%;
+  bottom: 65%;
+ }
+#aboutme1{
+  position: absolute;
+  color: #140d07;
+  left:40%;
+  font-family:serif;
+  bottom: 40%;
+  font-size: 120%;
+}
+#Contactme{
+  position: absolute;
+  color:#140d07;
+  left: 70%;
+  font-style: bold;
+  font-family:fantasy; 
+  font-family: serif;
+  font-size:400%;
+  bottom: 65%;
+}
+#email{
+  position: absolute;
+  color: #140d07;
+  left:71%;
+  font-family:serif;
+  bottom: 51.5%;
+  font-size: 130%;
+}
+#Phonenumber{
+   position: absolute;
+  color: #140d07;
+  left:71%;
+  font-family:serif;
+  bottom: 40%;
+  font-size: 145%;
+}
+#Address{
+   position: absolute;
+  color: #140d07;
+  left:71%;
+  font-family:serif;
+  bottom: 30%;
+  font-size: 145%;
+}
+#PhotographerName{
+   position: absolute;
+  color:#140d07;
+  left: 8%;
+  font-weight:bolder; 
+  font-family: serif;
+  font-size:220%;
+  bottom: 17%;
+}
+#skills{
+   position: absolute;
+  color:#140d07;
+  left: 11.5%;
+  font-style: italic;
+  font-family: serif;
+  font-size:200%;
+  bottom: 6%;
+}
+#artworks{
+   position: absolute;
+  color:#140d07;
+  left: 16.6%;
+  font-weight: bolder;
+  font-style: underline;
+  font-family: monospace;
+  font-size:220%;
+  bottom: 5%;
+}
+</style>
+</head>
+<body>
+  <a href="artwork.html" id="artworks">SEE WORKS</a>
+  <p id="aboutme1">I'VE BEEN IN THE INDUSTRY FOR 14<br> YEARS. I'VE DONE EVERYTHING FROM <br>COMMERCIAL MODELING TO WALKING<br> INTERNATIONAL RUNWAYS. I'M OPEN<br> TO ALL TYPES OF MODELING<br> OPPORTUNITIES.</p>
+  <p id="skills">Scenery/Portrait/Foods</p>
+  <a id="PhotographerName">Jorey Mapagmahal Rivero</a>
+  <p id="Address">Address:<br>123 Anywhere St., Any City</p>
+  <p id="Phonenumber">Phone Number:<br>(123) 456 7890</p>
+  <p id="email">Email:<br> Hello@reallygreatsite.com</p>
+  <a id="Contactme">Contact Me</a>
+  <a id="Aboutme">About Me</a>
+<a href="CODAK GALLERY WEBSITE.html" class="fa fa-caret-square-o-left" id="back-button"> Back</a>
+            <img src="https://scontent.fcrk2-2.fna.fbcdn.net/v/t39.30808-6/321391449_3613290152228129_1103659825508534679_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGdHLPc_HWJsN75oZXqcpD3LyTdqEOOKaIvJN2oQ44pouFpyKTSiJKvHp_4E6ZmVhoUDfTJq7Jt8jOT3sNC58_J&_nc_ohc=ESa3Ww_z1iIAb6PmHeA&_nc_ht=scontent.fcrk2-2.fna&oh=00_AfDlKsB5V1w1QjlaloXdF4D749555uHPjm3KrV63Fqxj3g&oe=6619E6F3" alt="haha.jpg" id="profile-image">
+      <header>
+               <ul> 
+                <li><a onclick="topFunction()" id="Overview" title="Go to top">Overview</a></li>
+
+  <div class="dropdown">
+    <button class="dropbtn">Category
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <button class="dropbtn"><b>Country</b></button><br>
+    <a><input type="radio" id="America" name="country" value="America">America</a>
+    <a><input type="radio" id="Philippines" name="country" value="Philippines">Philippines</a>
+    <a><input type="radio" id="Japan" name="country" value="Japan">Japan</a>
+    <a><input type="radio" id="Russia" name="country" value="Russia">Russia</a>
+   <a><input type="radio" id="Germany" name="country" value="Germany">Germany</a>
+      <button class="dropbtn"><b>Type</b></button>
+      <a><input type="radio" id="Portrait" name="type" value="Portrait">Portrait</a>
+      <a><input type="radio" id="Landscape" name="type" value="Landscape">Landscape</a>
+      <a><input type="radio"  id="Nature" name="type" value="Nature">Nature</a>
+    </div>
+  </div>
+                <li><a href="#fourteenpic" onclick="scrollToAbout()">About</a></li>
+            </ul>
+
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/434261361_439909815373478_1643222907937126022_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yCe3Wek8DGMAb4TKCy3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdWZEHhTyLfy4nY_crJwfqoG5u0-hAtTnOc-ngneIBQWdA&oe=66360965" id="codaklogo" alt="codak">
+            <h1 id="codakheader">CODAK GALLERY</h1>
+
+            <button type="submit"class="search"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search.." name="search" class="search-input">
+            <span class="clear-btn" onclick="clearSearch()">&#10006;</span>
+
+            <div class="dropdown" id="profile">
+    <button class="dropbtn">
+      <i class="fa fa-user-circle-o"></i></button>
+      <div class="dropdown-content">
+      <a href="profile.html">My Profile</a>
+      <a href="login.html">Sign Out</a>
+</header>
+</body>
+<script>      function clearSearch() {
+    var input = document.querySelector('.search-input');
+    input.value = '';
+  }
+</script>
+</html>
